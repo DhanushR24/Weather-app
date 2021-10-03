@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const weather = require('openweather-apis');
 const appKey = "e1f8f5838e58896a754b19092a6c075e";
-const port = process.env.PORT || 443;
+const port = process.env.PORT || 3000;
 
 weather.setLang('en');
 weather.setAPPID(appKey);
