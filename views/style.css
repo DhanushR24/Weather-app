@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    overflow-x: hidden;
+    font-family: 'ABeeZee', Roboto, sans-serif;
+    font-size: 25px;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #E9E8E7;
+}
+h1 {
+    margin: 2em 0 0.25em 0;
+    color: #2d6476;
+    text-align: center;
+    font-size: 60px;
+}
+
+input {
+    border-radius: 5px;
+    font-size: 20px;
+}
+div {
+    color: #E9E8E7;
+}
+
+.container {
+    max-width: 800px;
+    
+    margin: 0 auto;
+    border-radius: 5%;
+    
+}
+.input-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+#text-input {
+    padding: 1em 3em;
+}
+#button {
+    padding: 1em 2em;
+}
+
+.output-container {
+    width: 60%;
+    margin: 1em auto;
+    margin-bottom: 2em;
+    padding: 1.5em;
+    background-color: #3A7F96;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction:column;
+}
+.out-container-element {
+    margin: 1em 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#date {
+    text-align: center;
+    font-size: 15px;
+    margin: 0.5em 0;
+}
+#city {
+    width: 80%;
+    margin: 1em auto;
+    text-align: center;
+    font-size: 25px;
+    color: #2d6476;
+    background-color: #E9E8E7;
+    border-radius: 10px;
+    padding: 0.25em 0.5em;
+}
+
+#temp, #pressure, #humidity {
+    font-size: 60px;
+}
+#description, #pressure {
+    text-align: right;
+}
+
+@media (max-width: 810px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    h1 {
+        margin: 0.25em 0;
+        font-size: 60px;
+    }
+    
+    .container {
+        max-width: 800px;
+        
+        margin: 0 auto;
+        border-radius: 5%;
+    }
+    .input-container {
+        width: 90%;
+        padding: 0.25em 0.5em;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #text-input {
+        padding: 1em 2em;
+        text-align: center;
+    }
+    #button {
+        padding: 1em 2em;
+    }
+    
+    .output-container {
+        width: 85%;
+        margin: 0.5em auto;
+        margin-bottom: 1em;
+        padding: 0.5em;
+    
+    }
+    .out-container-element {
+        margin: 1em 0;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #date {
+        text-align: center;
+        margin: 0.5em 0;
+    }
+    #city {
+        text-align: center;
+        font-size: 25px;
+        color: #2d6476;
+        background-color: #E9E8E7;
+        padding: 0.25em 0.5em;
+        margin-bottom: 1em;
+    }
+    #temp, #pressure, #humidity {
+        font-size: 40px;
+    }
+    #description {
+        width: 150px;
+    }
+}

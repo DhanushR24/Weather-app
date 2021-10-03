@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/external-wanicon-two-tone-wanicon/2x/external-climate-spring-season-wanicon-two-tone-wanicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>WEATHER FORCAST</h1>
+        <form class="input-container" id="form">
+            <input type="text" name="" id="text-input" placeholder="City Name" required>
+            <input type="button" value="Search" id="button">
+        </form>
+
+        <div class="output-container">
+            <div id="date"></div>
+            <div id="city"></div>
+            <div class="out-container-element">
+                <div id="temp"></div>
+                <div id="description"></div>
+            </div>
+            <div class="out-container-element">
+                <div class="features-wrapper">
+                    <div id="humidity"></div>
+                    <div>humidity</div>
+                </div>
+
+                <div class="feature-wrapper">
+                    <div id="pressure"></div>
+                    <div>pressure</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
